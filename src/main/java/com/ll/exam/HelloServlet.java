@@ -11,7 +11,7 @@ import java.io.IOException;
 @WebServlet("/hello")
 public class HelloServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         // 들어오는 파라미터를 UTF-8로 해석
         req.setCharacterEncoding("UTF-8");
         // 서블릿이 HTML 파일을 만들 때 UTF-8 로 쓰기
